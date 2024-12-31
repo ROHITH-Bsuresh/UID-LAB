@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000000; /* Dark blue background */
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo img {
+  max-height: 60px; /* Increased logo height for better visibility */
+  object-fit: contain; /* Ensures logo maintains aspect ratio */
+}
+
+.header-logo h1 {
+  font-size: 2em; /* Slightly larger text for prominence */
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.header-links ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Increased spacing between items */
+  margin: 0;
+  padding: 0;
+}
+
+.header-links ul li {
+  font-size: 1.2em; /* Slightly larger font size for better readability */
+}
+
+.header-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+  padding: 5px 10px; /* Added padding for better click area */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+.header-links ul li a:hover {
+  background-color: white;
+  color: #002D72; /* Matching header background color */
+  text-decoration: none; /* Remove underline on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}

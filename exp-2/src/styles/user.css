@@ -1,0 +1,119 @@
+body {
+    background-color: lightblue; /* Black background for the entire page */
+    color: #fff; /* White text color for readability */
+    font-family: Arial, sans-serif; /* Generic font for better text rendering */
+}
+
+.user-profile {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: lightslategray; /* Dark gray background for the profile card */
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+.profile-picture-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #fff; /* White border for the profile picture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-picture-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.user-name {
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: #fff; /* White color for the user name */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.5s;
+}
+
+.user-email {
+    color: #ddd; /* Light gray for the email */
+    margin: 0.5em 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 1s;
+}
+
+.user-bio {
+    font-style: italic;
+    color: #bbb; /* Gray for the bio */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 1.5s;
+}
+
+.user-phone,
+.user-address {
+    margin: 0.5em 0;
+    color: #ddd; /* Light gray for phone and address */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 2s;
+}
+
+.social-media-links {
+    margin-top: 1em;
+}
+
+.social-media-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media-links li {
+    margin: 0.5em 0;
+}
+
+.social-media-links a {
+    color: #fff; /* White for social media links */
+    text-decoration: double;
+    
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #bbb; /* Light gray for hover effect */
+    text-decoration: double;
+    background-color: aqua;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

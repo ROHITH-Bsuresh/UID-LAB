@@ -1,0 +1,47 @@
+.footer {
+  padding: 30px 20px; /* Increased padding for more space */
+  background-color: #1a1a1a; /* Darker background for better contrast */
+  color: #f1f1f1; /* Lighter text color for better readability */
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.1em; /* Slightly larger font size for better readability */
+  color: #ccc;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the links horizontally */
+  gap: 15px; /* Added gap between links */
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500; /* Slightly heavier font weight for emphasis */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-links a:hover {
+  color: #007BFF;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Added text-shadow on hover for subtle effect */
+}
